@@ -13,8 +13,19 @@ const DUMMY_LIST = [
   },
 ];
 
-function HomePage() {
-  return <TodoList todos={DUMMY_LIST} />;
+function HomePage(props) {
+  return <TodoList todos={props.todoitems} />;
+}
+
+export async function getStaticProps() {
+    // fetch data from an API or DB
+    // Getting data through props.
+    return {
+        props: {
+            todoitems: DUMMY_LIST
+        },
+        revalidate: 1
+    };
 }
 
 export default HomePage;
