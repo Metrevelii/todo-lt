@@ -32,7 +32,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       todoData: {
-        id: "m1",
+        id: todoId,
         title: "First Item",
         description: "Description of the first to do list item",
       },
