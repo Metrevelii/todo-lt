@@ -20,9 +20,7 @@ function TodoItem(props) {
         <div className={classes.actions}>
           <button onClick={showDetailsHandler}>Show Details</button>
         </div>
-        <div className={classes.actions}>
-          <button>Completed</button>
-        </div>
+        
       </Card>
     </li>
   );
