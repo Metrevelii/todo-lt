@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import classes from "./TodoDetail.module.css";
+
 
 function TodoDetail(props) {
   return (
     <Fragment>
-      <section className={classes.detail}>
+      <section className="text-center">
         <h1>{props.title}</h1>
         <p>{props.description}</p>
       </section>

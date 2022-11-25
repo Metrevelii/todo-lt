@@ -1,11 +1,10 @@
 import MainNavigation from './MainNavigation';
-import classes from './Layout.module.css';
 
 function Layout(props) {
   return (
     <div>
       <MainNavigation />
-      <main className={classes.main}>{props.children}</main>
+      <main className="my-12 mx-auto w-11/12 max-w-2xl">{props.children}</main>
     </div>
   );
 }
